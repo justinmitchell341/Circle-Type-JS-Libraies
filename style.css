@@ -21,7 +21,8 @@ body{
     animation-name: spinner;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 100s;
+    animation-duration: 75s;
+    animation-delay: 1ms;
   }
   
        @keyframes spinner{
