@@ -1,4 +1,41 @@
-/*  Styling */ 
 body{
-    background-color: slategray;
-}
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background:url(https://images.unsplash.com/photo-1583224874284-c7aeb59863d7?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170);
+  }
+  h1{
+    font-size: 1.5em;
+    width: 12em;
+   height: 12em;
+  border-radius: 20em;
+      position: relative;
+    z-index: 1;
+    color: white;
+    background: black;
+    margin: 0;
+  }
+  
+  .spinner {
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 100s;
+  }
+  
+       @keyframes spinner{
+    0%{
+     transform: rotate(0deg)
+    }
+    35% {
+      transform: rotate(920deg)
+    }
+    36%,
+    56% {
+      transform: rotate(920deg)
+    }
+   100%{
+     transform: rotate(1440deg)
+    }
+  }
